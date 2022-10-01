@@ -1,5 +1,5 @@
 // Even/Odd For loop Function
-/*
+
 function evenify_all(nums) {
   for (let i = 0; i < nums.length; i++) {
     const num = nums[i];
@@ -17,7 +17,6 @@ evenify_all(nums);
 let friends_age = [13, 20, 19, 15, 17, 16, 14, 18];
 evenify_all(friends_age);
 
-*/
 // Even/Odd For loop Function Return
 
 function evenify(number2) {
@@ -41,3 +40,7 @@ function evenify_for(number) {
 var number = [2, 4, 7, 2, 5, 9, 8, 4, 3];
 var result = evenify_for(number);
 console.log(result);
+
+let friends_ages = [13, 20, 19, 15, 17, 16, 14, 18];
+var result2 = evenify_for(friends_ages);
+console.log(result2);
