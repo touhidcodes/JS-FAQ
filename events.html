@@ -19,6 +19,8 @@
     <h1>Exploring Event by Add Event Listener</h1>
     <button id="first-E">Click Me 1</button>
     <button id="second-E">Click Me 2</button>
+    <h1>Exploring Event by Anonymous Add Event Listener</h1>
+    <button id="first-Event">Click Me 1</button>
   </body>
   <script>
     // Events by CSS
@@ -64,5 +66,11 @@
     first_Btn.addEventListener("click", handleClick);
     const second_Btn = document.getElementById("second-E");
     second_Btn.addEventListener("click", handleClick2);
+    // Events by anonymous addEventListener
+    document
+      .getElementById("first-Event")
+      .addEventListener("click", function () {
+        document.body.style.backgroundColor = "tomato";
+      });
   </script>
 </html>
