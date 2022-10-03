@@ -15,6 +15,10 @@
     <button id="second">Click Me 2</button>
     <button id="third">Click Me 3</button>
     <button id="fourth">Click Me 4</button>
+
+    <h1>Exploring Event by Add Event Listener</h1>
+    <button id="first-E">Click Me 1</button>
+    <button id="second-E">Click Me 2</button>
   </body>
   <script>
     // Events by CSS
@@ -49,5 +53,16 @@
     thirdBtn.onmousedown = thirdClick;
     const fourthBtn = document.getElementById("fourth");
     fourthBtn.onmouseleave = fourthClick;
+    // Events by addEventListener
+    function handleClick() {
+      document.body.style.backgroundColor = "purple";
+    }
+    function handleClick2() {
+      alert("This is second click");
+    }
+    const first_Btn = document.getElementById("first-E");
+    first_Btn.addEventListener("click", handleClick);
+    const second_Btn = document.getElementById("second-E");
+    second_Btn.addEventListener("click", handleClick2);
   </script>
 </html>
