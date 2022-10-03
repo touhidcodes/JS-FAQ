@@ -35,9 +35,19 @@
     function secondClick() {
       alert("This is second click");
     }
-    const firstBtn = document.getElementById("second");
+    function thirdClick() {
+      document.body.style.backgroundColor = "red";
+    }
+    function fourthClick() {
+      alert("This is fourth click");
+    }
+    const firstBtn = document.getElementById("first");
     firstBtn.onclick = firstClick;
     const secondBtn = document.getElementById("second");
-    secondBtn.onclick = secondClick;
+    secondBtn.onmousemove = secondClick;
+    const thirdBtn = document.getElementById("third");
+    thirdBtn.onmousedown = thirdClick;
+    const fourthBtn = document.getElementById("fourth");
+    fourthBtn.onmouseleave = fourthClick;
   </script>
 </html>
