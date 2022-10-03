@@ -6,12 +6,18 @@
     <title>Exploring Events</title>
   </head>
   <body>
-    <h1>Exploring Event</h1>
+    <h1>Exploring Event by CSS</h1>
     <button onclick="mouseClick()">Click Me 1</button>
     <button onmousemove="mouseMove()">Click Me 2</button>
     <button onmousedown="mouseDown()">Click Me 3</button>
+    <h1>Exploring Event by ID</h1>
+    <button id="first">Click Me 1</button>
+    <button id="second">Click Me 2</button>
+    <button id="third">Click Me 3</button>
+    <button id="fourth">Click Me 4</button>
   </body>
   <script>
+    // Events by CSS
     function mouseClick() {
       alert("Clicked me in click 1");
     }
@@ -21,5 +27,17 @@
     function mouseDown() {
       console.log("Mouse Down click 3");
     }
+
+    // Events By ID
+    function firstClick() {
+      document.body.style.backgroundColor = "cyan";
+    }
+    function secondClick() {
+      alert("This is second click");
+    }
+    const firstBtn = document.getElementById("second");
+    firstBtn.onclick = firstClick;
+    const secondBtn = document.getElementById("second");
+    secondBtn.onclick = secondClick;
   </script>
 </html>
