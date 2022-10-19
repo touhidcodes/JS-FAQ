@@ -29,6 +29,14 @@
         .addEventListener("click", function () {
           console.log("Container Item");
         });
+
+      var removeItem = document.getElementsByClassName("items");
+      for (let i = 0; i < removeItem.length; i++) {
+        const item = removeItem[i];
+        item.addEventListener("click", function (event) {
+          event.target.parentNode.removeChild;
+        });
+      }
     </script>
   </body>
 </html>
