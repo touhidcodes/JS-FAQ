@@ -15,6 +15,7 @@
         <li class="items">Lorem, ipsum dolor.</li>
         <li class="items">Lorem, ipsum dolor.</li>
       </ul>
+      <button id="addNew">Add new item</button>
     </div>
     <script>
       document.getElementById("first").addEventListener("click", function () {
@@ -34,9 +35,17 @@
       for (let i = 0; i < removeItem.length; i++) {
         const item = removeItem[i];
         item.addEventListener("click", function (event) {
-          event.target.parentNode.removeChild;
+          event.target.parentNode.removeChild(event.target);
         });
       }
+      document
+        .getElementById("addNew")
+        .addEventListener("click", function (event) {
+          var itemParent = document.getElementById("mylist");
+          var newItem = document.createElement("li");
+          newItem.innerText = "Brand New";
+          itemParent.appendChild(newItem);
+        });
     </script>
   </body>
 </html>
