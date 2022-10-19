@@ -46,6 +46,9 @@
           newItem.innerText = "Brand New";
           itemParent.appendChild(newItem);
         });
+      document.getElementById("mylist").addEventListener("click", function () {
+        event.target.parentNode.removeChild(event.target);
+      });
     </script>
   </body>
 </html>
