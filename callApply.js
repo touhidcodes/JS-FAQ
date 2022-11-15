@@ -10,4 +10,5 @@ const normalPeople = {
   },
 };
 
-console.log(normalPeople.chargeBill(150));
+normalPeople.chargeBill(150);
+console.log(normalPeople.salary);
