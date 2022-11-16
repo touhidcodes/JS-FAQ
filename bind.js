@@ -1,4 +1,4 @@
-//Function under Object called Method
+//Call other object method use bind
 const normalPeople = {
   firstName: "Touhidur",
   lastName: "Zaman",
@@ -11,8 +11,14 @@ const normalPeople = {
   },
 };
 
-normalPeople.getFullName();
+const heroPeople = {
+  firstName: "Arnold",
+  lastName: "Schwarzenegger",
+  salary: 20000,
+};
 
-normalPeople.chargeBill(150);
-normalPeople.chargeBill(1500);
-console.log(normalPeople.salary);
+const otherPeople = {
+  firstName: "Chris",
+  lastName: "Gaile",
+  salary: 10000,
+};
