@@ -1,4 +1,4 @@
-//Function under Object called Method
+//Function under Object called Method:
 const normalPeople = {
   firstName: "Touhidur",
   lastName: "Zaman",
@@ -6,13 +6,38 @@ const normalPeople = {
   getFullName: function () {
     console.log(this.firstName, this.lastName);
   },
-  chargeBill: function (amount) {
+  chargeBill: function (amount, tax) {
     this.salary = this.salary - amount;
   },
 };
 
-normalPeople.getFullName();
+const heroPeople = {
+  firstName: "Arnold",
+  lastName: "Schwarzenegger",
+  salary: 20000,
+};
 
-normalPeople.chargeBill(150);
-normalPeople.chargeBill(1500);
-console.log(normalPeople.salary);
+const otherPeople = {
+  firstName: "Chris",
+  lastName: "Gaile",
+  salary: 10000,
+};
+
+// normalPeople.getFullName();
+
+// normalPeople.chargeBill(150);
+// normalPeople.chargeBill(1500);
+// console.log(normalPeople.salary);
+
+//Call other object method use Bind:
+const heroChargeBill = normalPeople.chargeBill.bind(heroPeople);
+heroChargeBill(2000);
+console.log(heroPeople.salary);
+
+const otherChargeBill = normalPeople.chargeBill.bind(otherPeople);
+heroChargeBill(1500);
+console.log(otherPeople.salary);
+
+//Call other object method use Call:
+normalPeople.chargeBill.call(heroPeople, 900);
+console.log(heroPeople.salary);
