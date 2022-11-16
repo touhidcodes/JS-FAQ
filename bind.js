@@ -22,3 +22,11 @@ const otherPeople = {
   lastName: "Gaile",
   salary: 10000,
 };
+
+const heroChargeBill = normalPeople.chargeBill.bind(heroPeople);
+heroChargeBill(2000);
+console.log(heroPeople.salary);
+
+const otherChargeBill = normalPeople.chargeBill.bind(otherPeople);
+heroChargeBill(1500);
+console.log(otherPeople.salary);
