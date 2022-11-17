@@ -38,18 +38,6 @@
           parentNode.appendChild(item);
         }
       }
-
-      loadData().then((data) => displayData(data));
-
-      function displayData(data) {
-        const parentNode = document.getElementById("listItem");
-        for (let i = 0; i < data.length; i++) {
-          const users = data[i];
-          const item = document.createElement("li");
-          item.innerText = users.name;
-          parentNode.appendChild(item);
-        }
-      }
     </script>
   </body>
 </html>
