@@ -13,10 +13,10 @@ function takeBath() {
   console.log("Take a bath Properly");
 }
 
-function scroollFB() {
+function scroollingFB() {
   console.log("Scrolling Facebook");
 }
 
 callback_exp("Rohim Khan", 34, washHand);
-callback_exp("Korimm Khan", 29, takeBath);
-callback_exp("Bolim Khan", 16, scroollFB);
+callback_exp("Korim Khan", 29, takeBath);
+callback_exp("Bolim Khan", 16, scroollingFB);
