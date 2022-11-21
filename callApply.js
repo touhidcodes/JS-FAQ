@@ -29,7 +29,7 @@ normalPeople.chargeBill(150);
 normalPeople.chargeBill(1500);
 console.log(normalPeople.salary);
 
-//Call other object method use Bind:
+//Call another object method use Bind:
 const heroChargeBill = normalPeople.chargeBill.bind(heroPeople);
 heroChargeBill(2000);
 console.log(heroPeople.salary);
@@ -38,14 +38,14 @@ const otherChargeBill = normalPeople.chargeBill.bind(otherPeople);
 heroChargeBill(1500);
 console.log(otherPeople.salary);
 
-//Call other object method use Call:
+//Call another object method use Call:
 normalPeople.chargeBill.call(heroPeople, 900);
 console.log(heroPeople.salary);
 
 normalPeople.chargeBill.call(otherPeople, 800);
 console.log(otherPeople.salary);
 
-//Call other object method use Apply:
+//Call another object method use Apply:
 normalPeople.chargeBill.apply(heroPeople, [900]);
 console.log(heroPeople.salary);
 
